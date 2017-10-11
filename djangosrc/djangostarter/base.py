@@ -84,5 +84,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 INSTALLED_APPS = INSTALLED_APPS + [
     'django.contrib.sites',
-    'homepage'
+    'homepage',
     ]

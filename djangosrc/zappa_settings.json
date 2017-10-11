@@ -5,6 +5,14 @@
         "profile_name": "default", 
         "project_name": "djangosrc", 
         "runtime": "python2.7", 
-        "s3_bucket": "djangostarter"
+        "s3_bucket": "djangostarter",
+        "events": [
+		  {
+		    "function": "cronjobmodule1.myfunc",
+		    "expression": "cron(37 2 * * ? *)"
+		  }
+		],
+		"timeout_seconds": 300,
+	   	"memory_size": 512,
     }
 }
