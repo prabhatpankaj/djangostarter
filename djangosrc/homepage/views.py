@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.views.generic import TemplateView
 
+from blog.models import Blog, Category
+from django.shortcuts import render_to_response, get_object_or_404
 
-# Create your views here.
-class HomeView(TemplateView):
-    template_name = "home.html"
+def HomeView(request):
+    return render_to_response('home.html', {
+        'categories': Category.objects.all(),
+        'posts': Blog.objects.all()[:5]
+    })
+

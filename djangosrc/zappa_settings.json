@@ -2,13 +2,13 @@
     "production": {
         "aws_region": "ap-southeast-1", 
         "django_settings": "djangostarter.prod_settings",
-        "profile_name": "default", 
+        "profile_name": "enopits", 
         "project_name": "djangosrc", 
         "runtime": "python2.7", 
         "s3_bucket": "djangostarter",
         "events": [
 		  {
-		    "function": "cronjobmodule1.myfunc",
+		    "function": "cronjob_blogpost.blogpost",
 		    "expression": "cron(37 2 * * ? *)"
 		  }
 		],
