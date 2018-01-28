@@ -62,6 +62,6 @@ DEFAULT_FROM_EMAIL = 'prabhatiitbhu@gmail.com'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
 
